@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram Post</title>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                height: auto;
+                padding-top: 50px;
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            }
+            .postContainer{
+                width: 30%;
+                height: auto;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 0;
+                justify-content: center;
+                vertical-align: middle;
+                align-items: center;
+                border: 1px solid #0f0f0f;
+                box-shadow: 0 0 10px #0f0f0f;
+            }
+            .verticalAlign{
+                position: absolute;
+                margin: 0;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                
+            }
+            .headerDiv{
+                display: flex;
+                justify-content: space-between;
+                color: #0f0f0f;
+                width: 100%;
+                height: 35px;
+                border-bottom: 1px solid #0f0f0f;
+                background-color: rgb(224, 223, 223);
+                padding-top: 15px;
+            }
+            .headerDiv span{
+                margin: 0 10px;
+            }
+            .headerDiv span i{
+                margin: 0 5px;
+            }
+            .headerDiv .title{
+                font-family: 'Condiment';
+                font-size: 22px;
+            }
+            .middleMainDiv{
+                width: 100%;
+                height: auto;
+                background-color: #f0f0f0;
+            }
+            .topProfileRow{
+                display: flex;
+                justify-content: space-between;
+                padding: 7px;
+            }
+            .rowLeftSide{
+                display: flex;
+            }
+            .profileImg{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .profileName{
+                margin: 7px 10px;
+            }
+            .blueColor{
+                color: rgb(7, 39, 107);
+                font-weight: 600;
+            }
+            .profileImg img{
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .rowRightSide{
+                margin: 7px 10px;
+            }
+            .imgDiv{
+                width: 100%;
+                height: 40vh;
+            }
+            .imgDiv img{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .reactionRow{
+                display: flex;
+                justify-content: space-between;
+                font-size: 22px;
+                margin: 10px 15px;
+            }
+            .bottomLeftIcon i{
+                padding: 0px 5px;
+            }
+            .bottomLeftIcon i:nth-child(1){
+                color: red;
+            }
+            .likesCount{
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            .postDate{
+                font-size: 12px;
+                margin-top: 7px;
+            }
+            .commentCountBox{
+                font-size: 12px;
+                margin-top: 7px;
+                color: gray;
+            }
+            .commentDiv{
+                display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                padding: 20px 20px;
+            }
+            .commentBox{
+                display: flex;
+                justify-content: center;
+                height: 30px;
+                width: 80%;
+                margin-right: 0px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            input[type="text"]{
+                width: 100%;
+                height: 100%;
+                outline: none;
+                border: 1px solid #222;
+                padding: 5px 10px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;    
+            }
+            .sendbtn{
+                font-size: 20px;
+                margin: 10px 15px;
+            }
+        </style>
+    </head>
+        <body>
+            <div class="postContainer">
+                <div class="headerDiv">
+                    <span><i class="fa fa-arrow-left" aria-hidden="true"></i>Photo</span>
+                    <span class="title">Instagram</span>
+                    <span><i class="fa fa-refresh" aria-hidden="true"></i></span>
+                </div>
+                <div class="middleMainDiv">
+                    <div class="topProfileRow">
+                        <div class="rowLeftSide">
+                            <div class="profileImg">
+                                <img src="msDhoniProfilePic.jpg">
+                            </div>
+                            <div class="profileName">
+                                mahi7781
+                                <i class="fa fa-check-circle-o blueColor" aria-hidden="true"></i>
+                                . <span class="blueColor">follow</span>
+                            </div>
+                        </div>
+                        <div class="rowRightSide">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="msDhoniPostImg.jpg" />
+                    </div>
+                    <div class="reactionRow">
+                        <div class="bottomLeftIcon">
+                            <i class="fa fa-heart heartIcon" aria-hidden="true"></i>
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <div class="likesCount"> 625,513 likes</div>
+                            <div class="postDate">June 4, 2014</div>
+                            <div class="commentCountBox">View all 5,613 comments</div>
+                        </div>
+                        <div class="bottomRightIcon">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="commentDiv">
+                        <div class="profileImg">
+                            <img src="randomProfilePic.jpg">
+                        </div>
+                        <div class="commentBox">
+                            <input type="text" autofocus>
+                            <div class="sendbtn">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>
